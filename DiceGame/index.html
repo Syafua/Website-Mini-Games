@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gane Dadu</title>
+  </head>
+  <body>
+    <section class="rule">
+      <button class="btn-rule">Aturan</button>
+    </section>
+    <div class="rule-set">
+      <!-- <div class="btn-back">
+        <button class="back-button">Back to Game</button>
+      </div> -->
+      <div class="rules-play">
+        <h1>ATURAN BERMAIN</h1>
+        <h2>Gimana caranya menang?</h2>
+        <p>Pemain pertama yang mencapai total 50 skor akan menang.</p>
+        <h2>Cara Bermain</h2>
+        <p>
+          Ente harus ngelempar dadunya biar dapet nomor, terus nomor itu bakalan nambahin skor ente sampe total 50 dan menangin gamenya.
+        </p>
+        <h2>Penggunaan tombol tahan</h2>
+        <p>
+          Jika angka 1 muncul saat Anda melempar dadu, maka semua skor Anda saat ini akan menjadi nol. 
+          Jadi, untuk menghindari situasi di mana Anda telah memperoleh skor saat ini yang baik dan Anda
+          ingin menambahkannya ke skor total Anda, maka Anda dapat menggunakan tombol tahan untuk menambahkannya 
+          dan memberikan kesempatan kepada lawan.
+        </p>
+      </div>
+    </div>
+    <main class="main">
+      <section class="player player-0 player-active">
+        <h2 class="name" id="name-0">player-1</h2>
+        <p class="score" id="score-0">10</p>
+        <div class="current">
+          <p class="current-label">current</p>
+          <p class="current-score" id="current-0">0</p>
+        </div>
+      </section>
+      <section class="player player-1">
+        <h2 class="name" id="name-1">player-2</h2>
+        <p class="score" id="score-1">6</p>
+        <div class="current">
+          <p class="current-label">current</p>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+
+      <span class="fa-solid dice"></span>
+      <button class="btn btn-new">New Game</button>
+      <button class="btn btn-roll">Roll dice</button>
+      <button class="btn btn-hold">Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
